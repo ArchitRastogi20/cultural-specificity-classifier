@@ -1,0 +1,39 @@
+
+2025-10-10 10:52:42,595 - INFO - Starting training for fold 1...
+  0%|                                                                                                                                               | 0/3744 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/workspace/new_model/train_enhanced.py", line 677, in <module>
+    main()
+  File "/workspace/new_model/train_enhanced.py", line 660, in main
+    best_model, results = train_with_kfold(train_df, tokenizer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/new_model/train_enhanced.py", line 543, in train_with_kfold
+    eval_results, model = train_single_fold(
+                          ^^^^^^^^^^^^^^^^^^
+  File "/workspace/new_model/train_enhanced.py", line 483, in train_single_fold
+    train_result = trainer.train()
+                   ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer.py", line 1537, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer.py", line 1854, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer.py", line 2723, in training_step
+    loss = self.compute_loss(model, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/new_model/train_enhanced.py", line 342, in compute_loss
+    loss = self.focal_loss(logits, labels)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/new_model/train_enhanced.py", line 138, in forward
+    ce_loss = F.cross_entropy(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/functional.py", line 3462, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected all tensors to be on the same device, but got weight is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA_nll_loss_forward)

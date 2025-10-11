@@ -1,0 +1,184 @@
+2025-10-10 18:03:33,481 - INFO - Using predictions from: ./predictions/predictions_20251010_180242.csv
+2025-10-10 18:03:33,482 - INFO - ================================================================================
+2025-10-10 18:03:33,483 - INFO - 🎯 MODEL EVALUATION WITH GROUND TRUTH
+2025-10-10 18:03:33,483 - INFO - ================================================================================
+2025-10-10 18:03:33,483 - INFO - 
+📂 Loading test data from: test.csv
+2025-10-10 18:03:33,502 - INFO - ✅ Loaded 300 test samples with ground truth
+2025-10-10 18:03:33,502 - INFO - 📂 Loading predictions from: ./predictions/predictions_20251010_180242.csv
+2025-10-10 18:03:33,523 - INFO - ✅ Loaded 300 predictions
+2025-10-10 18:03:33,548 - INFO - ✅ Merged 300 samples for evaluation
+2025-10-10 18:03:33,549 - INFO - 
+📊 Ground Truth Distribution:
+2025-10-10 18:03:33,551 - INFO -   cultural agnostic             :  117 (39.0%)
+2025-10-10 18:03:33,551 - INFO -   cultural representative       :  107 (35.7%)
+2025-10-10 18:03:33,551 - INFO -   cultural exclusive            :   76 (25.3%)
+2025-10-10 18:03:33,551 - INFO - 
+================================================================================
+2025-10-10 18:03:33,551 - INFO - 📝 GENERATING COMPLETE REPORT
+2025-10-10 18:03:33,551 - INFO - ================================================================================
+2025-10-10 18:03:33,551 - INFO - 
+================================================================================
+2025-10-10 18:03:33,552 - INFO - 📈 EVALUATION METRICS
+2025-10-10 18:03:33,552 - INFO - ================================================================================
+2025-10-10 18:03:33,590 - INFO - 
+🎯 Overall Metrics:
+2025-10-10 18:03:33,590 - INFO - --------------------------------------------------------------------------------
+2025-10-10 18:03:33,590 - INFO - Accuracy                 : 0.7667 (76.67%)
+2025-10-10 18:03:33,590 - INFO - F1 Score (Macro)         : 0.7495
+2025-10-10 18:03:33,591 - INFO - F1 Score (Weighted)      : 0.7645
+2025-10-10 18:03:33,591 - INFO - Precision (Macro)        : 0.7496
+2025-10-10 18:03:33,591 - INFO - Precision (Weighted)     : 0.7630
+2025-10-10 18:03:33,591 - INFO - Recall (Macro)           : 0.7500
+2025-10-10 18:03:33,591 - INFO - Recall (Weighted)        : 0.7667
+2025-10-10 18:03:33,591 - INFO - Cohen's Kappa            : 0.6439
+2025-10-10 18:03:33,591 - INFO - 
+📊 Per-Class Metrics:
+2025-10-10 18:03:33,591 - INFO - --------------------------------------------------------------------------------
+2025-10-10 18:03:33,598 - INFO - 
+Class                           Precision     Recall   F1-Score    Support
+2025-10-10 18:03:33,598 - INFO - --------------------------------------------------------------------------------
+2025-10-10 18:03:33,598 - INFO - cultural agnostic                  0.8780     0.9231     0.9000        117
+2025-10-10 18:03:33,598 - INFO - cultural exclusive                 0.6622     0.6447     0.6533         76
+2025-10-10 18:03:33,598 - INFO - cultural representative            0.7087     0.6822     0.6952        107
+2025-10-10 18:03:33,598 - INFO - 
+🔍 Error Analysis:
+2025-10-10 18:03:33,598 - INFO - --------------------------------------------------------------------------------
+2025-10-10 18:03:33,601 - INFO - 
+❌ Total Errors: 70 / 300 (23.33%)
+2025-10-10 18:03:33,601 - INFO - 
+📊 Errors by True Class:
+2025-10-10 18:03:33,601 - INFO - --------------------------------------------------------------------------------
+2025-10-10 18:03:33,603 - INFO - 
+cultural agnostic:
+2025-10-10 18:03:33,603 - INFO -   Errors: 9 / 117 (7.7%)
+2025-10-10 18:03:33,604 - INFO -   Misclassified as:
+2025-10-10 18:03:33,604 - INFO -     → cultural representative: 5 (55.6%)
+2025-10-10 18:03:33,604 - INFO -     → cultural exclusive: 4 (44.4%)
+2025-10-10 18:03:33,605 - INFO - 
+cultural exclusive:
+2025-10-10 18:03:33,605 - INFO -   Errors: 27 / 76 (35.5%)
+2025-10-10 18:03:33,606 - INFO -   Misclassified as:
+2025-10-10 18:03:33,606 - INFO -     → cultural representative: 25 (92.6%)
+2025-10-10 18:03:33,606 - INFO -     → cultural agnostic: 2 (7.4%)
+2025-10-10 18:03:33,607 - INFO - 
+cultural representative:
+2025-10-10 18:03:33,607 - INFO -   Errors: 34 / 107 (31.8%)
+2025-10-10 18:03:33,608 - INFO -   Misclassified as:
+2025-10-10 18:03:33,608 - INFO -     → cultural exclusive: 21 (61.8%)
+2025-10-10 18:03:33,608 - INFO -     → cultural agnostic: 13 (38.2%)
+2025-10-10 18:03:33,608 - INFO - 
+❌ Top 10 Errors (Lowest Confidence):
+2025-10-10 18:03:33,608 - INFO - --------------------------------------------------------------------------------
+2025-10-10 18:03:33,613 - INFO - 
+Pinewood Toronto Studios
+  True: cultural exclusive             | Predicted: cultural representative       
+  Confidence: 0.4298
+2025-10-10 18:03:33,613 - INFO - 
+curia
+  True: cultural representative        | Predicted: cultural exclusive            
+  Confidence: 0.4697
+2025-10-10 18:03:33,613 - INFO - 
+flat white
+  True: cultural representative        | Predicted: cultural agnostic             
+  Confidence: 0.4727
+2025-10-10 18:03:33,614 - INFO - 
+Siuuu
+  True: cultural representative        | Predicted: cultural exclusive            
+  Confidence: 0.4806
+2025-10-10 18:03:33,614 - INFO - 
+Prishtina International Film Festival
+  True: cultural exclusive             | Predicted: cultural representative       
+  Confidence: 0.4871
+2025-10-10 18:03:33,614 - INFO - 
+Talk to Me
+  True: cultural exclusive             | Predicted: cultural agnostic             
+  Confidence: 0.4939
+2025-10-10 18:03:33,614 - INFO - 
+Manichaeism
+  True: cultural agnostic              | Predicted: cultural exclusive            
+  Confidence: 0.5125
+2025-10-10 18:03:33,614 - INFO - 
+Paul Morand
+  True: cultural representative        | Predicted: cultural exclusive            
+  Confidence: 0.5142
+2025-10-10 18:03:33,615 - INFO - 
+rigaudon
+  True: cultural exclusive             | Predicted: cultural representative       
+  Confidence: 0.5312
+2025-10-10 18:03:33,615 - INFO - 
+Glasgow School
+  True: cultural representative        | Predicted: cultural exclusive            
+  Confidence: 0.5331
+2025-10-10 18:03:33,620 - INFO - 
+✅ All errors saved to: ./predictions/errors_analysis.csv
+2025-10-10 18:03:33,620 - INFO - 
+📊 Confusion Matrix:
+2025-10-10 18:03:33,620 - INFO - --------------------------------------------------------------------------------
+2025-10-10 18:03:33,624 - INFO - 
+                                cultural a  cultural e  cultural r
+2025-10-10 18:03:33,624 - INFO - ------------------------------------------------------------------
+2025-10-10 18:03:33,625 - INFO - cultural agnostic                      108           4           5
+2025-10-10 18:03:33,625 - INFO - cultural exclusive                       2          49          25
+2025-10-10 18:03:33,625 - INFO - cultural representative                 13          21          73
+2025-10-10 18:03:33,625 - INFO - 
+📊 Confusion Matrix (Normalized - Row Percentages):
+2025-10-10 18:03:33,625 - INFO - --------------------------------------------------------------------------------
+2025-10-10 18:03:33,625 - INFO - 
+                                cultural a  cultural e  cultural r
+2025-10-10 18:03:33,625 - INFO - ------------------------------------------------------------------
+2025-10-10 18:03:33,625 - INFO - cultural agnostic                   92.3%        3.4%        4.3% 
+2025-10-10 18:03:33,625 - INFO - cultural exclusive                   2.6%       64.5%       32.9% 
+2025-10-10 18:03:33,625 - INFO - cultural representative             12.1%       19.6%       68.2% 
+2025-10-10 18:03:35,994 - INFO - 
+✅ Confusion matrix plot saved to: ./predictions/confusion_matrix.png
+2025-10-10 18:03:35,995 - INFO - 
+📋 Detailed Classification Report:
+2025-10-10 18:03:35,995 - INFO - --------------------------------------------------------------------------------
+2025-10-10 18:03:36,029 - INFO - 
+                         precision    recall  f1-score   support
+
+      cultural agnostic     0.8780    0.9231    0.9000       117
+     cultural exclusive     0.6622    0.6447    0.6533        76
+cultural representative     0.7087    0.6822    0.6952       107
+
+               accuracy                         0.7667       300
+              macro avg     0.7496    0.7500    0.7495       300
+           weighted avg     0.7630    0.7667    0.7645       300
+
+2025-10-10 18:03:36,029 - INFO - 
+📊 Confidence Analysis:
+2025-10-10 18:03:36,029 - INFO - --------------------------------------------------------------------------------
+2025-10-10 18:03:36,029 - INFO - 
+Overall Confidence Statistics:
+2025-10-10 18:03:36,030 - INFO -   Mean: 0.7942
+2025-10-10 18:03:36,030 - INFO -   Std:  0.1255
+2025-10-10 18:03:36,030 - INFO -   Min:  0.4298
+2025-10-10 18:03:36,030 - INFO -   Max:  0.9420
+2025-10-10 18:03:36,037 - INFO - 
+✅ Correct Predictions (n=230):
+2025-10-10 18:03:36,039 - INFO -   Mean Confidence: 0.8199 ± 0.1103
+2025-10-10 18:03:36,039 - INFO - 
+❌ Incorrect Predictions (n=70):
+2025-10-10 18:03:36,039 - INFO -   Mean Confidence: 0.7098 ± 0.1366
+2025-10-10 18:03:36,039 - INFO - 
+📊 Confidence by Class (Correct Predictions Only):
+2025-10-10 18:03:36,040 - INFO - --------------------------------------------------------------------------------
+2025-10-10 18:03:36,043 - INFO -   cultural agnostic             : 0.8681 ± 0.0765 (n=108)
+2025-10-10 18:03:36,045 - INFO -   cultural exclusive            : 0.8064 ± 0.1220 (n=49)
+2025-10-10 18:03:36,046 - INFO -   cultural representative       : 0.7577 ± 0.1119 (n=73)
+2025-10-10 18:03:36,048 - INFO - 
+✅ Complete report saved to: ./predictions/evaluation_report.json
+2025-10-10 18:03:36,048 - INFO - 
+================================================================================
+2025-10-10 18:03:36,048 - INFO - 🎉 EVALUATION SUMMARY
+2025-10-10 18:03:36,049 - INFO - ================================================================================
+2025-10-10 18:03:36,049 - INFO - 
+✅ Accuracy:        0.7667 (76.67%)
+2025-10-10 18:03:36,049 - INFO - ✅ F1 Macro:        0.7495
+2025-10-10 18:03:36,049 - INFO - ✅ F1 Weighted:     0.7645
+2025-10-10 18:03:36,049 - INFO - ✅ Cohen's Kappa:   0.6439
+2025-10-10 18:03:36,050 - INFO - 
+❌ Total Errors:    70 / 300 (23.33%)
+2025-10-10 18:03:36,050 - INFO - 
+================================================================================
