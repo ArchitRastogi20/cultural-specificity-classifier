@@ -40,18 +40,18 @@ class ModelEvaluator:
     
     def __init__(self, test_csv_path, predictions_csv_path):
         logger.info("="*80)
-        logger.info("🎯 MODEL EVALUATION WITH GROUND TRUTH")
+        logger.info(" MODEL EVALUATION WITH GROUND TRUTH")
         logger.info("="*80)
         
         # Load test data with ground truth
-        logger.info(f"\n📂 Loading test data from: {test_csv_path}")
+        logger.info(f"\n Loading test data from: {test_csv_path}")
         self.test_df = pd.read_csv(test_csv_path)
-        logger.info(f"✅ Loaded {len(self.test_df)} test samples with ground truth")
+        logger.info(f" Loaded {len(self.test_df)} test samples with ground truth")
         
         # Load predictions
-        logger.info(f"📂 Loading predictions from: {predictions_csv_path}")
+        logger.info(f" Loading predictions from: {predictions_csv_path}")
         self.pred_df = pd.read_csv(predictions_csv_path)
-        logger.info(f"✅ Loaded {len(self.pred_df)} predictions")
+        logger.info(f" Loaded {len(self.pred_df)} predictions")
         
         # Merge
         self.eval_df = self.test_df[['item', 'name', 'label']].copy()
@@ -61,7 +61,7 @@ class ModelEvaluator:
             how='inner'
         )
         
-        logger.info(f"✅ Merged {len(self.eval_df)} samples for evaluation")
+        logger.info(f" Merged {len(self.eval_df)} samples for evaluation")
         
         # Get true and predicted labels
         self.y_true = self.eval_df['label'].values
@@ -69,14 +69,14 @@ class ModelEvaluator:
         self.confidences = self.eval_df['confidence'].values
         
         # Label distribution
-        logger.info("\n📊 Ground Truth Distribution:")
+        logger.info("\n Ground Truth Distribution:")
         for label, count in self.test_df['label'].value_counts().items():
             logger.info(f"  {label:30s}: {count:4d} ({count/len(self.test_df)*100:.1f}%)")
     
     def compute_metrics(self):
         """Compute all evaluation metrics"""
         logger.info("\n" + "="*80)
-        logger.info("📈 EVALUATION METRICS")
+        logger.info(" EVALUATION METRICS")
         logger.info("="*80)
         
         metrics = {}
@@ -108,7 +108,7 @@ class ModelEvaluator:
         metrics['recall_weighted'] = recall_weighted
         metrics['cohen_kappa'] = kappa
         
-        logger.info("\n🎯 Overall Metrics:")
+        logger.info("\n Overall Metrics:")
         logger.info("-" * 80)
         logger.info(f"{'Accuracy':25s}: {accuracy:.4f} ({accuracy*100:.2f}%)")
         logger.info(f"{'F1 Score (Macro)':25s}: {f1_macro:.4f}")
@@ -123,7 +123,7 @@ class ModelEvaluator:
     
     def per_class_metrics(self):
         """Compute per-class metrics"""
-        logger.info("\n📊 Per-Class Metrics:")
+        logger.info("\n Per-Class Metrics:")
         logger.info("-" * 80)
         
         # Get per-class metrics
@@ -156,7 +156,7 @@ class ModelEvaluator:
     
     def confusion_matrix_analysis(self, save_plot=True):
         """Generate and analyze confusion matrix"""
-        logger.info("\n📊 Confusion Matrix:")
+        logger.info("\n Confusion Matrix:")
         logger.info("-" * 80)
         
         # Compute confusion matrix
@@ -178,7 +178,7 @@ class ModelEvaluator:
         # Normalized confusion matrix (percentages)
         cm_normalized = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
         
-        logger.info("\n📊 Confusion Matrix (Normalized - Row Percentages):")
+        logger.info("\n Confusion Matrix (Normalized - Row Percentages):")
         logger.info("-" * 80)
         logger.info(f"\n{'':30s}" + "".join([f"{label[:10]:>12s}" for label in labels]))
         logger.info("-" * (30 + 12 * len(labels)))
@@ -222,16 +222,16 @@ class ModelEvaluator:
                 plt.savefig('./predictions/confusion_matrix.png', dpi=300, bbox_inches='tight')
                 plt.close()
                 
-                logger.info("\n✅ Confusion matrix plot saved to: ./predictions/confusion_matrix.png")
+                logger.info("\n Confusion matrix plot saved to: ./predictions/confusion_matrix.png")
                 
             except Exception as e:
-                logger.warning(f"⚠️  Could not generate confusion matrix plot: {e}")
+                logger.warning(f"  Could not generate confusion matrix plot: {e}")
         
         return cm, cm_normalized
     
     def classification_report_detailed(self):
         """Generate detailed classification report"""
-        logger.info("\n📋 Detailed Classification Report:")
+        logger.info("\n Detailed Classification Report:")
         logger.info("-" * 80)
         
         report = classification_report(
@@ -247,20 +247,20 @@ class ModelEvaluator:
     
     def error_analysis(self):
         """Analyze misclassified samples"""
-        logger.info("\n🔍 Error Analysis:")
+        logger.info("\n Error Analysis:")
         logger.info("-" * 80)
         
         # Find misclassified samples
         errors = self.eval_df[self.eval_df['label'] != self.eval_df['predicted_label']].copy()
         
-        logger.info(f"\n❌ Total Errors: {len(errors)} / {len(self.eval_df)} ({len(errors)/len(self.eval_df)*100:.2f}%)")
+        logger.info(f"\n Total Errors: {len(errors)} / {len(self.eval_df)} ({len(errors)/len(self.eval_df)*100:.2f}%)")
         
         if len(errors) == 0:
-            logger.info("🎉 Perfect predictions! No errors found.")
+            logger.info(" Perfect predictions! No errors found.")
             return {}
         
         # Error breakdown by true class
-        logger.info("\n📊 Errors by True Class:")
+        logger.info("\n Errors by True Class:")
         logger.info("-" * 80)
         
         error_analysis = {}
@@ -287,7 +287,7 @@ class ModelEvaluator:
             }
         
         # Show examples of errors with lowest confidence
-        logger.info("\n❌ Top 10 Errors (Lowest Confidence):")
+        logger.info("\n Top 10 Errors (Lowest Confidence):")
         logger.info("-" * 80)
         
         errors_sorted = errors.nsmallest(10, 'confidence')
@@ -301,13 +301,13 @@ class ModelEvaluator:
         # Save all errors to CSV
         errors_file = './predictions/errors_analysis.csv'
         errors.to_csv(errors_file, index=False)
-        logger.info(f"\n✅ All errors saved to: {errors_file}")
+        logger.info(f"\n All errors saved to: {errors_file}")
         
         return error_analysis
     
     def confidence_analysis(self):
         """Analyze confidence scores"""
-        logger.info("\n📊 Confidence Analysis:")
+        logger.info("\n Confidence Analysis:")
         logger.info("-" * 80)
         
         # Overall confidence
@@ -322,17 +322,17 @@ class ModelEvaluator:
         correct_conf = self.eval_df[correct_mask]['confidence']
         incorrect_conf = self.eval_df[~correct_mask]['confidence']
         
-        logger.info(f"\n✅ Correct Predictions (n={len(correct_conf)}):")
+        logger.info(f"\n Correct Predictions (n={len(correct_conf)}):")
         logger.info(f"  Mean Confidence: {correct_conf.mean():.4f} ± {correct_conf.std():.4f}")
         
-        logger.info(f"\n❌ Incorrect Predictions (n={len(incorrect_conf)}):")
+        logger.info(f"\n Incorrect Predictions (n={len(incorrect_conf)}):")
         if len(incorrect_conf) > 0:
             logger.info(f"  Mean Confidence: {incorrect_conf.mean():.4f} ± {incorrect_conf.std():.4f}")
         else:
             logger.info(f"  No incorrect predictions!")
         
         # Confidence by class (for correct predictions)
-        logger.info(f"\n📊 Confidence by Class (Correct Predictions Only):")
+        logger.info(f"\n Confidence by Class (Correct Predictions Only):")
         logger.info("-" * 80)
         
         for label in sorted(self.eval_df['label'].unique()):
@@ -349,7 +349,7 @@ class ModelEvaluator:
     def generate_complete_report(self, output_file='./predictions/evaluation_report.json'):
         """Generate complete evaluation report"""
         logger.info("\n" + "="*80)
-        logger.info("📝 GENERATING COMPLETE REPORT")
+        logger.info(" GENERATING COMPLETE REPORT")
         logger.info("="*80)
         
         report = {
@@ -375,19 +375,19 @@ class ModelEvaluator:
         with open(output_file, 'w') as f:
             json.dump(report, f, indent=2)
         
-        logger.info(f"\n✅ Complete report saved to: {output_file}")
+        logger.info(f"\n Complete report saved to: {output_file}")
         
         # Print summary
         logger.info("\n" + "="*80)
-        logger.info("🎉 EVALUATION SUMMARY")
+        logger.info(" EVALUATION SUMMARY")
         logger.info("="*80)
-        logger.info(f"\n✅ Accuracy:        {report['overall_metrics']['accuracy']:.4f} ({report['overall_metrics']['accuracy']*100:.2f}%)")
-        logger.info(f"✅ F1 Macro:        {report['overall_metrics']['f1_macro']:.4f}")
-        logger.info(f"✅ F1 Weighted:     {report['overall_metrics']['f1_weighted']:.4f}")
-        logger.info(f"✅ Cohen's Kappa:   {report['overall_metrics']['cohen_kappa']:.4f}")
+        logger.info(f"\n Accuracy:        {report['overall_metrics']['accuracy']:.4f} ({report['overall_metrics']['accuracy']*100:.2f}%)")
+        logger.info(f" F1 Macro:        {report['overall_metrics']['f1_macro']:.4f}")
+        logger.info(f" F1 Weighted:     {report['overall_metrics']['f1_weighted']:.4f}")
+        logger.info(f" Cohen's Kappa:   {report['overall_metrics']['cohen_kappa']:.4f}")
         
         errors = len(self.eval_df) - (self.eval_df['label'] == self.eval_df['predicted_label']).sum()
-        logger.info(f"\n❌ Total Errors:    {errors} / {len(self.eval_df)} ({errors/len(self.eval_df)*100:.2f}%)")
+        logger.info(f"\n Total Errors:    {errors} / {len(self.eval_df)} ({errors/len(self.eval_df)*100:.2f}%)")
         
         logger.info("\n" + "="*80)
         
@@ -401,7 +401,7 @@ def main():
     pred_files = glob.glob('./predictions/predictions_*.csv')
     
     if not pred_files:
-        logger.error("❌ No prediction files found!")
+        logger.error(" No prediction files found!")
         logger.info("Please run inference.py first")
         return
     

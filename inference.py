@@ -72,9 +72,9 @@ class CulturalClassifier:
         
         try:
             self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
-            logger.info(f"✅ Tokenizer loaded from: {tokenizer_path}")
+            logger.info(f" Tokenizer loaded from: {tokenizer_path}")
         except Exception as e:
-            logger.error(f"❌ Failed to load tokenizer from {tokenizer_path}: {e}")
+            logger.error(f" Failed to load tokenizer from {tokenizer_path}: {e}")
             raise
         
         # Load model
@@ -85,7 +85,7 @@ class CulturalClassifier:
         self.id2label = self.model.config.id2label
         self.label2id = self.model.config.label2id
         
-        logger.info(f"✅ Model loaded successfully!")
+        logger.info(f" Model loaded successfully!")
         logger.info(f"Model config: {self.model.config.num_labels} classes")
     
     def create_input_text(self, row):
@@ -194,7 +194,7 @@ class EnsembleClassifier:
         
         # Load shared tokenizer
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
-        logger.info(f"✅ Shared tokenizer loaded")
+        logger.info(f" Shared tokenizer loaded")
         
         # Load all models
         for i, path in enumerate(tqdm(model_paths, desc="Loading models")):
@@ -205,11 +205,11 @@ class EnsembleClassifier:
                     model.eval()
                     
                     self.models.append(model)
-                    logger.info(f"  ✅ Loaded model {i+1}: {path}")
+                    logger.info(f"   Loaded model {i+1}: {path}")
                 except Exception as e:
-                    logger.warning(f"  ⚠️  Failed to load model from {path}: {e}")
+                    logger.warning(f"    Failed to load model from {path}: {e}")
             else:
-                logger.warning(f"  ⚠️  Model path not found: {path}")
+                logger.warning(f"    Model path not found: {path}")
         
         if len(self.models) == 0:
             raise ValueError("No models loaded successfully!")
@@ -221,7 +221,7 @@ class EnsembleClassifier:
             self.weights = np.array(weights)
             self.weights = self.weights / self.weights.sum()
         
-        logger.info(f"✅ Successfully loaded {len(self.models)} models")
+        logger.info(f" Successfully loaded {len(self.models)} models")
         logger.info(f"Ensemble method: {self.method}")
         logger.info(f"Ensemble weights: {self.weights}")
         
@@ -348,7 +348,7 @@ class EnsembleClassifier:
 def generate_analysis(result_df, output_dir):
     """Generate comprehensive analysis"""
     logger.info("\n" + "="*70)
-    logger.info("📊 Generating Analysis")
+    logger.info(" Generating Analysis")
     logger.info("="*70)
     
     os.makedirs(output_dir, exist_ok=True)
@@ -356,7 +356,7 @@ def generate_analysis(result_df, output_dir):
     analysis = {}
     
     # 1. Basic Statistics
-    logger.info("\n1️⃣ Basic Statistics:")
+    logger.info("\n1⃣ Basic Statistics:")
     logger.info("-" * 50)
     
     pred_dist = result_df['predicted_label'].value_counts()
@@ -368,7 +368,7 @@ def generate_analysis(result_df, output_dir):
     analysis['prediction_distribution'] = pred_dist.to_dict()
     
     # 2. Confidence Analysis
-    logger.info("\n2️⃣ Confidence Analysis:")
+    logger.info("\n2⃣ Confidence Analysis:")
     logger.info("-" * 50)
     
     conf_stats = {
@@ -387,7 +387,7 @@ def generate_analysis(result_df, output_dir):
     analysis['confidence_stats'] = conf_stats
     
     # 3. Confidence by Class
-    logger.info("\n3️⃣ Confidence by Predicted Class:")
+    logger.info("\n3⃣ Confidence by Predicted Class:")
     logger.info("-" * 50)
     
     conf_by_class = {}
@@ -403,7 +403,7 @@ def generate_analysis(result_df, output_dir):
     analysis['confidence_by_class'] = conf_by_class
     
     # 4. Low Confidence Predictions
-    logger.info("\n4️⃣ Low Confidence Predictions:")
+    logger.info("\n4⃣ Low Confidence Predictions:")
     logger.info("-" * 50)
     
     low_conf_analysis = {}
@@ -419,7 +419,7 @@ def generate_analysis(result_df, output_dir):
     
     # 5. Category Analysis
     if 'category' in result_df.columns:
-        logger.info("\n5️⃣ Top Categories by Prediction:")
+        logger.info("\n5⃣ Top Categories by Prediction:")
         logger.info("-" * 50)
         
         category_analysis = {}
@@ -437,7 +437,7 @@ def generate_analysis(result_df, output_dir):
     
     # 6. Type Analysis
     if 'type' in result_df.columns:
-        logger.info("\n6️⃣ Predictions by Type:")
+        logger.info("\n6⃣ Predictions by Type:")
         logger.info("-" * 50)
         
         type_analysis = {}
@@ -454,14 +454,14 @@ def generate_analysis(result_df, output_dir):
         analysis['type_analysis'] = type_analysis
     
     # 7. Most/Least Confident Predictions
-    logger.info("\n7️⃣ Most Confident Predictions (Top 10):")
+    logger.info("\n7⃣ Most Confident Predictions (Top 10):")
     logger.info("-" * 50)
     
     most_confident = result_df.nlargest(10, 'confidence')[['name', 'predicted_label', 'confidence']]
     for idx, row in most_confident.iterrows():
         logger.info(f"  {row['name'][:45]:45s} → {row['predicted_label']:30s} ({row['confidence']:.4f})")
     
-    logger.info("\n8️⃣ Least Confident Predictions (Bottom 10):")
+    logger.info("\n8⃣ Least Confident Predictions (Bottom 10):")
     logger.info("-" * 50)
     
     least_confident = result_df.nsmallest(10, 'confidence')[['name', 'predicted_label', 'confidence']]
@@ -472,7 +472,7 @@ def generate_analysis(result_df, output_dir):
     analysis_path = os.path.join(output_dir, 'analysis_summary.json')
     with open(analysis_path, 'w') as f:
         json.dump(analysis, f, indent=2)
-    logger.info(f"\n✅ Analysis saved to: {analysis_path}")
+    logger.info(f"\n Analysis saved to: {analysis_path}")
     
     return analysis
 
@@ -483,7 +483,7 @@ def generate_analysis(result_df, output_dir):
 def main():
     """Main inference pipeline"""
     logger.info("="*70)
-    logger.info("🔍 Cultural Classification Inference Pipeline")
+    logger.info(" Cultural Classification Inference Pipeline")
     logger.info("="*70)
     
     # Create output directory
@@ -491,9 +491,9 @@ def main():
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     
     # Load test data
-    logger.info(f"\n📂 Loading test data from: {config.TEST_PATH}")
+    logger.info(f"\n Loading test data from: {config.TEST_PATH}")
     test_df = pd.read_csv(config.TEST_PATH)
-    logger.info(f"✅ Loaded {len(test_df)} test samples")
+    logger.info(f" Loaded {len(test_df)} test samples")
     
     # Check for ensemble models
     if config.USE_ENSEMBLE:
@@ -501,7 +501,7 @@ def main():
         existing_models = [m for m in fold_models if os.path.exists(m)]
         
         if len(existing_models) > 1:
-            logger.info(f"\n🎯 Using ensemble of {len(existing_models)} models")
+            logger.info(f"\n Using ensemble of {len(existing_models)} models")
             try:
                 # Use best_model for tokenizer
                 classifier = EnsembleClassifier(
@@ -510,30 +510,30 @@ def main():
                     method=config.ENSEMBLE_METHOD
                 )
             except Exception as e:
-                logger.warning(f"⚠️  Ensemble failed: {e}")
+                logger.warning(f"  Ensemble failed: {e}")
                 logger.info("Falling back to single best model")
                 classifier = CulturalClassifier(config.MODEL_PATH)
         else:
-            logger.info(f"\n🎯 Using single best model (not enough fold models)")
+            logger.info(f"\n Using single best model (not enough fold models)")
             classifier = CulturalClassifier(config.MODEL_PATH)
     else:
-        logger.info(f"\n🎯 Using single best model from: {config.MODEL_PATH}")
+        logger.info(f"\n Using single best model from: {config.MODEL_PATH}")
         classifier = CulturalClassifier(config.MODEL_PATH)
     
     # Make predictions
-    logger.info("\n🚀 Starting predictions...")
+    logger.info("\n Starting predictions...")
     result_df = classifier.predict_dataframe(test_df)
     
     # Save predictions
     prediction_file = os.path.join(config.OUTPUT_DIR, f'predictions_{timestamp}.csv')
     result_df.to_csv(prediction_file, index=False)
-    logger.info(f"\n✅ Full predictions saved to: {prediction_file}")
+    logger.info(f"\n Full predictions saved to: {prediction_file}")
     
     # Save submission format (only required columns)
     submission_df = result_df[['item', 'name', 'predicted_label', 'confidence']].copy()
     submission_file = os.path.join(config.OUTPUT_DIR, f'submission_{timestamp}.csv')
     submission_df.to_csv(submission_file, index=False)
-    logger.info(f"✅ Submission file saved to: {submission_file}")
+    logger.info(f" Submission file saved to: {submission_file}")
     
     # Generate analysis
     analysis = generate_analysis(result_df, config.OUTPUT_DIR)
@@ -545,7 +545,7 @@ def main():
         if len(low_conf_df) > 0:
             low_conf_file = os.path.join(config.OUTPUT_DIR, f'low_confidence_{timestamp}.csv')
             low_conf_df.to_csv(low_conf_file, index=False)
-            logger.info(f"✅ Low confidence predictions saved to: {low_conf_file}")
+            logger.info(f" Low confidence predictions saved to: {low_conf_file}")
         
         # Save per-class results
         for label in result_df['predicted_label'].unique():
@@ -553,16 +553,16 @@ def main():
             class_file = os.path.join(config.OUTPUT_DIR, f'{label.replace(" ", "_")}_{timestamp}.csv')
             class_df.to_csv(class_file, index=False)
         
-        logger.info(f"✅ Per-class predictions saved")
+        logger.info(f" Per-class predictions saved")
     
     # Final summary
     logger.info("\n" + "="*70)
-    logger.info("✅ Inference Complete!")
+    logger.info(" Inference Complete!")
     logger.info("="*70)
-    logger.info(f"📊 Total predictions: {len(result_df)}")
-    logger.info(f"📈 Mean confidence: {result_df['confidence'].mean():.4f}")
-    logger.info(f"📁 Results saved to: {config.OUTPUT_DIR}/")
-    logger.info(f"📝 Main files:")
+    logger.info(f" Total predictions: {len(result_df)}")
+    logger.info(f" Mean confidence: {result_df['confidence'].mean():.4f}")
+    logger.info(f" Results saved to: {config.OUTPUT_DIR}/")
+    logger.info(f" Main files:")
     logger.info(f"   - predictions_{timestamp}.csv (full results)")
     logger.info(f"   - submission_{timestamp}.csv (submission format)")
     logger.info(f"   - analysis_summary.json (detailed statistics)")

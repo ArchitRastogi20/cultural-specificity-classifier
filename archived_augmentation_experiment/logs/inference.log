@@ -1,0 +1,159 @@
+2025-10-10 18:02:42,389 - INFO - ======================================================================
+2025-10-10 18:02:42,390 - INFO -  Cultural Classification Inference Pipeline
+2025-10-10 18:02:42,390 - INFO - ======================================================================
+2025-10-10 18:02:42,391 - INFO - 
+ Loading test data from: test_augmented.csv
+2025-10-10 18:02:42,410 - INFO -  Loaded 300 test samples
+2025-10-10 18:02:42,411 - INFO - 
+ Using single best model (not enough fold models)
+2025-10-10 18:02:42,411 - INFO - Loading model from: ./best_model_enhanced
+2025-10-10 18:02:42,604 - INFO - Using device: cuda
+2025-10-10 18:02:44,198 - INFO -  Tokenizer loaded from: ./best_model_enhanced
+2025-10-10 18:02:56,712 - INFO -  Model loaded successfully!
+2025-10-10 18:02:56,715 - INFO - Model config: 3 classes
+2025-10-10 18:02:56,715 - INFO - 
+ Starting predictions...
+2025-10-10 18:02:56,715 - INFO - Predicting for 300 samples...
+2025-10-10 18:02:59,557 - INFO - 
+ Full predictions saved to: ./predictions/predictions_20251010_180242.csv
+2025-10-10 18:02:59,569 - INFO -  Submission file saved to: ./predictions/submission_20251010_180242.csv
+2025-10-10 18:02:59,569 - INFO - 
+======================================================================
+2025-10-10 18:02:59,569 - INFO -  Generating Analysis
+2025-10-10 18:02:59,570 - INFO - ======================================================================
+2025-10-10 18:02:59,570 - INFO - 
+1⃣ Basic Statistics:
+2025-10-10 18:02:59,570 - INFO - --------------------------------------------------
+2025-10-10 18:02:59,573 - INFO - 
+Prediction Distribution:
+2025-10-10 18:02:59,573 - INFO -   cultural agnostic             :  123 (41.00%)
+2025-10-10 18:02:59,573 - INFO -   cultural representative       :  103 (34.33%)
+2025-10-10 18:02:59,573 - INFO -   cultural exclusive            :   74 (24.67%)
+2025-10-10 18:02:59,574 - INFO - 
+2⃣ Confidence Analysis:
+2025-10-10 18:02:59,574 - INFO - --------------------------------------------------
+2025-10-10 18:02:59,592 - INFO -   mean      : 0.7942
+2025-10-10 18:02:59,592 - INFO -   std       : 0.1257
+2025-10-10 18:02:59,592 - INFO -   min       : 0.4298
+2025-10-10 18:02:59,592 - INFO -   max       : 0.9420
+2025-10-10 18:02:59,592 - INFO -   median    : 0.8468
+2025-10-10 18:02:59,592 - INFO -   q25       : 0.7303
+2025-10-10 18:02:59,592 - INFO -   q75       : 0.8903
+2025-10-10 18:02:59,593 - INFO - 
+3⃣ Confidence by Predicted Class:
+2025-10-10 18:02:59,593 - INFO - --------------------------------------------------
+2025-10-10 18:02:59,598 - INFO -   cultural agnostic             : 0.8518 ± 0.0992 (n=123)
+2025-10-10 18:02:59,600 - INFO -   cultural representative       : 0.7353 ± 0.1174 (n=103)
+2025-10-10 18:02:59,602 - INFO -   cultural exclusive            : 0.7804 ± 0.1353 (n=74)
+2025-10-10 18:02:59,602 - INFO - 
+4⃣ Low Confidence Predictions:
+2025-10-10 18:02:59,602 - INFO - --------------------------------------------------
+2025-10-10 18:02:59,603 - INFO -   Confidence < 0.5:   10 (  3.3%)
+2025-10-10 18:02:59,604 - INFO -   Confidence < 0.6:   37 ( 12.3%)
+2025-10-10 18:02:59,605 - INFO -   Confidence < 0.7:   63 ( 21.0%)
+2025-10-10 18:02:59,606 - INFO -   Confidence < 0.8:  113 ( 37.7%)
+2025-10-10 18:02:59,606 - INFO - 
+5⃣ Top Categories by Prediction:
+2025-10-10 18:02:59,606 - INFO - --------------------------------------------------
+2025-10-10 18:02:59,608 - INFO - 
+  literature (n=20):
+2025-10-10 18:02:59,609 - INFO -     cultural agnostic: 8
+2025-10-10 18:02:59,609 - INFO -     cultural representative: 7
+2025-10-10 18:02:59,609 - INFO -     cultural exclusive: 5
+2025-10-10 18:02:59,610 - INFO - 
+  comics and anime (n=17):
+2025-10-10 18:02:59,610 - INFO -     cultural representative: 12
+2025-10-10 18:02:59,611 - INFO -     cultural agnostic: 5
+2025-10-10 18:02:59,612 - INFO - 
+  philosophy and religion (n=17):
+2025-10-10 18:02:59,612 - INFO -     cultural representative: 7
+2025-10-10 18:02:59,612 - INFO -     cultural agnostic: 6
+2025-10-10 18:02:59,612 - INFO -     cultural exclusive: 4
+2025-10-10 18:02:59,614 - INFO - 
+  visual arts (n=17):
+2025-10-10 18:02:59,614 - INFO -     cultural agnostic: 8
+2025-10-10 18:02:59,614 - INFO -     cultural representative: 5
+2025-10-10 18:02:59,614 - INFO -     cultural exclusive: 4
+2025-10-10 18:02:59,615 - INFO - 
+  food (n=17):
+2025-10-10 18:02:59,615 - INFO -     cultural representative: 9
+2025-10-10 18:02:59,615 - INFO -     cultural agnostic: 8
+2025-10-10 18:02:59,617 - INFO - 
+  fashion (n=17):
+2025-10-10 18:02:59,617 - INFO -     cultural representative: 8
+2025-10-10 18:02:59,617 - INFO -     cultural agnostic: 7
+2025-10-10 18:02:59,617 - INFO -     cultural exclusive: 2
+2025-10-10 18:02:59,618 - INFO - 
+  music (n=16):
+2025-10-10 18:02:59,618 - INFO -     cultural agnostic: 8
+2025-10-10 18:02:59,618 - INFO -     cultural exclusive: 5
+2025-10-10 18:02:59,618 - INFO -     cultural representative: 3
+2025-10-10 18:02:59,620 - INFO - 
+  media (n=16):
+2025-10-10 18:02:59,620 - INFO -     cultural representative: 8
+2025-10-10 18:02:59,620 - INFO -     cultural agnostic: 5
+2025-10-10 18:02:59,620 - INFO -     cultural exclusive: 3
+2025-10-10 18:02:59,621 - INFO - 
+  films (n=16):
+2025-10-10 18:02:59,621 - INFO -     cultural representative: 15
+2025-10-10 18:02:59,621 - INFO -     cultural agnostic: 1
+2025-10-10 18:02:59,623 - INFO - 
+  performing arts (n=16):
+2025-10-10 18:02:59,623 - INFO -     cultural representative: 10
+2025-10-10 18:02:59,623 - INFO -     cultural agnostic: 5
+2025-10-10 18:02:59,623 - INFO -     cultural exclusive: 1
+2025-10-10 18:02:59,623 - INFO - 
+6⃣ Predictions by Type:
+2025-10-10 18:02:59,623 - INFO - --------------------------------------------------
+2025-10-10 18:02:59,625 - INFO - 
+  concept (n=152):
+2025-10-10 18:02:59,625 - INFO -     cultural agnostic: 102
+2025-10-10 18:02:59,625 - INFO -     cultural representative: 35
+2025-10-10 18:02:59,625 - INFO -     cultural exclusive: 15
+2025-10-10 18:02:59,627 - INFO - 
+  entity (n=148):
+2025-10-10 18:02:59,627 - INFO -     cultural representative: 68
+2025-10-10 18:02:59,627 - INFO -     cultural exclusive: 59
+2025-10-10 18:02:59,627 - INFO -     cultural agnostic: 21
+2025-10-10 18:02:59,627 - INFO - 
+7⃣ Most Confident Predictions (Top 10):
+2025-10-10 18:02:59,627 - INFO - --------------------------------------------------
+2025-10-10 18:02:59,635 - INFO -   transport in Hungary                          → cultural exclusive             (0.9420)
+2025-10-10 18:02:59,635 - INFO -   Baselland Transport                           → cultural exclusive             (0.9409)
+2025-10-10 18:02:59,635 - INFO -   Rietheim                                      → cultural exclusive             (0.9406)
+2025-10-10 18:02:59,636 - INFO -   Rossens                                       → cultural exclusive             (0.9397)
+2025-10-10 18:02:59,636 - INFO -   Bassecourt                                    → cultural exclusive             (0.9391)
+2025-10-10 18:02:59,636 - INFO -   Emmenbrücke Gersag railway station            → cultural exclusive             (0.9383)
+2025-10-10 18:02:59,636 - INFO -   independent city of Germany                   → cultural exclusive             (0.9371)
+2025-10-10 18:02:59,636 - INFO -   Royal free city                               → cultural exclusive             (0.9353)
+2025-10-10 18:02:59,637 - INFO -   Baldegg railway station                       → cultural exclusive             (0.9312)
+2025-10-10 18:02:59,637 - INFO -   Aarwangen Castle                              → cultural exclusive             (0.9305)
+2025-10-10 18:02:59,637 - INFO - 
+8⃣ Least Confident Predictions (Bottom 10):
+2025-10-10 18:02:59,637 - INFO - --------------------------------------------------
+2025-10-10 18:02:59,641 - INFO -   Pinewood Toronto Studios                      → cultural representative        (0.4298)
+2025-10-10 18:02:59,641 - INFO -   Industrial Culture Handbook                   → cultural agnostic              (0.4355)
+2025-10-10 18:02:59,641 - INFO -   milk bar                                      → cultural agnostic              (0.4570)
+2025-10-10 18:02:59,641 - INFO -   Geneva Open Challenger                        → cultural representative        (0.4689)
+2025-10-10 18:02:59,642 - INFO -   curia                                         → cultural exclusive             (0.4697)
+2025-10-10 18:02:59,642 - INFO -   flat white                                    → cultural agnostic              (0.4726)
+2025-10-10 18:02:59,642 - INFO -   Baltic song festivals                         → cultural representative        (0.4744)
+2025-10-10 18:02:59,642 - INFO -   Siuuu                                         → cultural exclusive             (0.4806)
+2025-10-10 18:02:59,642 - INFO -   Prishtina International Film Festival         → cultural representative        (0.4871)
+2025-10-10 18:02:59,643 - INFO -   Talk to Me                                    → cultural agnostic              (0.4939)
+2025-10-10 18:02:59,644 - INFO - 
+ Analysis saved to: ./predictions/analysis_summary.json
+2025-10-10 18:02:59,649 - INFO -  Low confidence predictions saved to: ./predictions/low_confidence_20251010_180242.csv
+2025-10-10 18:02:59,664 - INFO -  Per-class predictions saved
+2025-10-10 18:02:59,664 - INFO - 
+======================================================================
+2025-10-10 18:02:59,664 - INFO -  Inference Complete!
+2025-10-10 18:02:59,664 - INFO - ======================================================================
+2025-10-10 18:02:59,664 - INFO -  Total predictions: 300
+2025-10-10 18:02:59,664 - INFO -  Mean confidence: 0.7942
+2025-10-10 18:02:59,665 - INFO -  Results saved to: ./predictions/
+2025-10-10 18:02:59,665 - INFO -  Main files:
+2025-10-10 18:02:59,665 - INFO -    - predictions_20251010_180242.csv (full results)
+2025-10-10 18:02:59,665 - INFO -    - submission_20251010_180242.csv (submission format)
+2025-10-10 18:02:59,665 - INFO -    - analysis_summary.json (detailed statistics)
+2025-10-10 18:02:59,665 - INFO - ======================================================================
