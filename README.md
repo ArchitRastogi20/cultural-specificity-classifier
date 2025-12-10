@@ -70,29 +70,39 @@ Attempted to improve performance using a larger model with Wikipedia-enriched de
 
 ## Results
 
-### Test Set Performance (Baseline Model)
+### **Test Set Performance (Baseline Model)**
 
-| Metric | Score |
-|--------|-------|
-| Accuracy | 78.67% |
-| F1 Macro | 0.7671 |
-| F1 Weighted | 0.7827 |
-| Cohen's Kappa | 0.6741 |
+| Metric            | Score      |
+| ----------------- | ---------- |
+| Number of samples | 300        |
+| Accuracy          | **0.7733** |
+| Macro F1          | **0.7578** |
 
-### Per-Class Performance
+---
 
-| Class | Precision | Recall | F1 | Support |
-|-------|-----------|--------|-----|---------|
-| Cultural Agnostic | 0.883 | 0.966 | 0.922 | 117 |
-| Cultural Representative | 0.745 | 0.682 | 0.712 | 107 |
-| Cultural Exclusive | 0.676 | 0.658 | 0.667 | 76 |
+### **Per-class metrics**
 
-### Cross-Validation (5-Fold)
+| Class                   | Precision | Recall | F1-score | Support |
+| ----------------------- | --------- | ------ | -------- | ------- |
+| Cultural Agnostic       | 0.87      | 0.93   | 0.90     | 117     |
+| Cultural Exclusive      | 0.65      | 0.71   | 0.68     | 76      |
+| Cultural Representative | 0.75      | 0.64   | 0.69     | 107     |
 
-| Metric | Mean ± Std |
-|--------|------------|
-| Accuracy | 0.8047 ± 0.0044 |
-| F1 Macro | 0.7992 ± 0.0039 |
+| Metric       | Score | Support |
+| ------------ | ----- | ------- |
+| Accuracy     | 0.77  | 300     |
+| Macro Avg    | 0.76  | 300     |
+| Weighted Avg | 0.77  | 300     |
+
+---
+
+### **Cross-Validation Performance (5-Fold)**
+
+| Metric   | Mean ± Std          |
+| -------- | ------------------- |
+| Accuracy | **0.8047 ± 0.0044** |
+| F1 Macro | **0.7992 ± 0.0039** |
+
 
 ### Error Analysis
 
