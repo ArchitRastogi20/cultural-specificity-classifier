@@ -1,7 +1,3 @@
-Here is a **brief, formal outermost `README.md`** that clearly distinguishes the two approaches and points to the correct folders.
-
----
-
 # Cultural Specificity Classifier
 
 This repository contains two complementary approaches for classifying items based on their degree of cultural specificity. The task involves assigning each item to one of three classes: Cultural Agnostic, Cultural Representative, or Cultural Exclusive.
