@@ -1,0 +1,301 @@
+item,name,predicted_label,confidence
+http://www.wikidata.org/entity/Q15786,1. FC Nürnberg,cultural exclusive,0.7216706462204456
+http://www.wikidata.org/entity/Q268530,77 Records,cultural exclusive,0.8955810964107513
+http://www.wikidata.org/entity/Q216153,A Bug's Life,cultural representative,0.7364658042788506
+http://www.wikidata.org/entity/Q593,A Gang Story,cultural representative,0.5779998190701008
+http://www.wikidata.org/entity/Q192185,Aaron Copland,cultural representative,0.9236097484827042
+http://www.wikidata.org/entity/Q265890,Aarwangen Castle,cultural exclusive,0.9586221724748611
+http://www.wikidata.org/entity/Q305718,abaya,cultural representative,0.8885937333106995
+http://www.wikidata.org/entity/Q337267,Academy of San Carlos,cultural exclusive,0.8542307540774345
+http://www.wikidata.org/entity/Q15,Africa,cultural agnostic,0.8624220117926598
+http://www.wikidata.org/entity/Q388170,African American literature,cultural representative,0.8722777217626572
+http://www.wikidata.org/entity/Q11453,agricultural irrigation,cultural agnostic,0.9513553977012634
+http://www.wikidata.org/entity/Q11436,aircraft,cultural agnostic,0.9441824853420258
+http://www.wikidata.org/entity/Q583479,Alcantara,cultural agnostic,0.9336707144975662
+http://www.wikidata.org/entity/Q91717,alcazaba,cultural representative,0.3897001165896654
+http://www.wikidata.org/entity/Q1453,Alexandra Stan,cultural representative,0.8914015293121338
+http://www.wikidata.org/entity/Q9570,Amitabh Bachchan,cultural representative,0.9186170846223831
+http://www.wikidata.org/entity/Q46392,Amjad Khan,cultural representative,0.9273588061332703
+http://www.wikidata.org/entity/Q487265,Anasyrma,cultural exclusive,0.7330947741866112
+http://www.wikidata.org/entity/Q25314,Angiosperms,cultural agnostic,0.9498754441738129
+http://www.wikidata.org/entity/Q1107,anime,cultural representative,0.9219034314155579
+http://www.wikidata.org/entity/Q27585,AOL,cultural representative,0.8979305624961853
+http://www.wikidata.org/entity/Q192150,apéritif,cultural representative,0.6432572565972805
+http://www.wikidata.org/entity/Q618238,Aperol,cultural representative,0.9231665283441544
+http://www.wikidata.org/entity/Q207241,applied arts,cultural agnostic,0.9477760046720505
+http://www.wikidata.org/entity/Q17045537,aragoto,cultural representative,0.86057448387146
+http://www.wikidata.org/entity/Q42973,architect,cultural agnostic,0.9488956928253174
+http://www.wikidata.org/entity/Q3151019,architectural engineer,cultural agnostic,0.9522219896316528
+http://www.wikidata.org/entity/Q45418,argan oil,cultural agnostic,0.8435839712619781
+http://www.wikidata.org/entity/Q1792450,art historian,cultural agnostic,0.9470067769289017
+http://www.wikidata.org/entity/Q11629,art of painting,cultural agnostic,0.9506893008947372
+http://www.wikidata.org/entity/Q7066,atheism,cultural agnostic,0.9384145438671112
+http://www.wikidata.org/entity/Q552300,"Baa, Baa, Black Sheep",cultural representative,0.8503036201000214
+http://www.wikidata.org/entity/Q31444638,Baldegg railway station,cultural exclusive,0.9588154405355453
+http://www.wikidata.org/entity/Q890297,Baltic song festivals,cultural exclusive,0.4764679856598377
+http://www.wikidata.org/entity/Q6658,Bamboula,cultural representative,0.8802024126052856
+http://www.wikidata.org/entity/Q807725,Barbarastollen underground archive,cultural exclusive,0.9558835625648499
+http://www.wikidata.org/entity/Q353936,Baselland Transport,cultural exclusive,0.9595736563205719
+http://www.wikidata.org/entity/Q66705,Bassecourt,cultural exclusive,0.9591264724731445
+http://www.wikidata.org/entity/Q811389,Bauhaus Archive,cultural exclusive,0.9392021745443344
+http://www.wikidata.org/entity/Q812609,Bayrisch Kraut,cultural exclusive,0.8781298473477364
+http://www.wikidata.org/entity/Q815611,Biblioteca Ambrosiana,cultural exclusive,0.9592128545045853
+http://www.wikidata.org/entity/Q11442,bicycle,cultural agnostic,0.9501357525587082
+http://www.wikidata.org/entity/Q5173,Bilateria,cultural agnostic,0.9457531571388245
+http://www.wikidata.org/entity/Q489,Bill Maher,cultural representative,0.918805330991745
+http://www.wikidata.org/entity/Q49759,bloc party,cultural agnostic,0.9419713318347931
+http://www.wikidata.org/entity/Q3641631,boho-chic,cultural representative,0.8447358310222626
+http://www.wikidata.org/entity/Q157906,Boomerang,cultural representative,0.9063465148210526
+http://www.wikidata.org/entity/Q549322,bullfighter,cultural agnostic,0.8235621824860573
+http://www.wikidata.org/entity/Q1132695,calico,cultural agnostic,0.6260353345423937
+http://www.wikidata.org/entity/Q65997,Caliph,cultural representative,0.8889703005552292
+http://www.wikidata.org/entity/Q5119,capital city,cultural agnostic,0.9401722103357315
+http://www.wikidata.org/entity/Q584540,captain,cultural agnostic,0.9519638270139694
+http://www.wikidata.org/entity/Q180449,carbatina,cultural representative,0.8377992063760757
+http://www.wikidata.org/entity/Q410,Carl Sagan,cultural representative,0.9173406213521957
+http://www.wikidata.org/entity/Q18240,carnivorous plant,cultural agnostic,0.9543287307024002
+http://www.wikidata.org/entity/Q568286,cento,cultural exclusive,0.9029246866703033
+http://www.wikidata.org/entity/Q154996,Charlottenburg Palace,cultural exclusive,0.8623652532696724
+http://www.wikidata.org/entity/Q251672,Château Borély,cultural exclusive,0.9562175869941711
+http://www.wikidata.org/entity/Q45982,Chittagong Kings,cultural exclusive,0.9409535825252533
+http://www.wikidata.org/entity/Q1604035,Choc Stars,cultural representative,0.6561419703066349
+http://www.wikidata.org/entity/Q222344,cinematographer,cultural agnostic,0.9411882013082504
+http://www.wikidata.org/entity/Q118865,clarinetist,cultural agnostic,0.8951670378446579
+http://www.wikidata.org/entity/Q265418,Classic Produktion Osnabrück,cultural exclusive,0.9567680358886719
+http://www.wikidata.org/entity/Q11955,Club Deportivo Guadalajara,cultural exclusive,0.9447607696056366
+http://www.wikidata.org/entity/Q280015,Colorado Gold Kings,cultural exclusive,0.9532881677150726
+http://www.wikidata.org/entity/Q245068,comedian,cultural agnostic,0.94107486307621
+http://www.wikidata.org/entity/Q27773,common sole,cultural agnostic,0.9279536306858063
+http://www.wikidata.org/entity/Q233591,communist party,cultural agnostic,0.5508469548076391
+http://www.wikidata.org/entity/Q379282,community journalism,cultural agnostic,0.9450109004974365
+http://www.wikidata.org/entity/Q36834,composer,cultural agnostic,0.9498641043901443
+http://www.wikidata.org/entity/Q158852,conductor,cultural agnostic,0.9273644238710403
+http://www.wikidata.org/entity/Q376596,courtship,cultural agnostic,0.9298913329839706
+http://www.wikidata.org/entity/Q134426,crime comic,cultural agnostic,0.936970442533493
+http://www.wikidata.org/entity/Q506002,crosier,cultural representative,0.7778693437576294
+http://www.wikidata.org/entity/Q172349,crown molding,cultural agnostic,0.9317262172698975
+http://www.wikidata.org/entity/Q1142035,Crunchyroll,cultural representative,0.9208494424819946
+http://www.wikidata.org/entity/Q597600,Cuban Institute of Radio and Television,cultural exclusive,0.9543684124946594
+http://www.wikidata.org/entity/Q7367,Culicidae,cultural agnostic,0.949611023068428
+http://www.wikidata.org/entity/Q8690,Cultural Revolution,cultural exclusive,0.7835323140025139
+http://www.wikidata.org/entity/Q247979,curia,cultural representative,0.5214696824550629
+http://www.wikidata.org/entity/Q5203792,D. Rajarathinam,cultural exclusive,0.834695927798748
+http://www.wikidata.org/entity/Q11639,dance,cultural agnostic,0.9369867891073227
+http://www.wikidata.org/entity/Q765,Dario Fo,cultural representative,0.9262026697397232
+http://www.wikidata.org/entity/Q15647884,Dato Sri Tahir,cultural exclusive,0.9522979855537415
+http://www.wikidata.org/entity/Q850794,dhoti,cultural representative,0.9021451771259308
+http://www.wikidata.org/entity/Q430,dinosaur,cultural agnostic,0.9493005722761154
+http://www.wikidata.org/entity/Q3290343,Dione Lucas,cultural representative,0.615968941245228
+http://www.wikidata.org/entity/Q130857,disc jockey,cultural agnostic,0.9423763006925583
+http://www.wikidata.org/entity/Q2722359,Dnyaneshwari,cultural representative,0.7345644403249025
+http://www.wikidata.org/entity/Q386854,drummer,cultural agnostic,0.9392281621694565
+http://www.wikidata.org/entity/Q15964121,Ebikon railway station,cultural exclusive,0.9583654403686523
+http://www.wikidata.org/entity/Q1350189,egyptologist,cultural representative,0.6623352244496346
+http://www.wikidata.org/entity/Q367660,Eid Mubarak,cultural representative,0.8895890712738037
+http://www.wikidata.org/entity/Q31444654,Emmenbrücke Gersag railway station,cultural exclusive,0.9588004052639008
+http://www.wikidata.org/entity/Q1706696,engastration,cultural agnostic,0.7725934088230133
+http://www.wikidata.org/entity/Q9465,ethics,cultural agnostic,0.9425890743732452
+http://www.wikidata.org/entity/Q1371394,ethnographic film,cultural agnostic,0.9414168149232864
+http://www.wikidata.org/entity/Q188907,etiquette,cultural agnostic,0.9041042476892471
+http://www.wikidata.org/entity/Q46706,Eugène Ionesco,cultural representative,0.9224400073289871
+http://www.wikidata.org/entity/Q387284,European comics,cultural representative,0.6543418765068054
+http://www.wikidata.org/entity/Q24649,European political party,cultural representative,0.3861415237188339
+http://www.wikidata.org/entity/Q38066,existentialism,cultural agnostic,0.7057584971189499
+http://www.wikidata.org/entity/Q658371,extra,cultural agnostic,0.9333257228136063
+http://www.wikidata.org/entity/Q693,fable,cultural agnostic,0.942956805229187
+http://www.wikidata.org/entity/Q699,fairy tale,cultural agnostic,0.9299766570329666
+http://www.wikidata.org/entity/Q9764,flamenco,cultural representative,0.92092065513134
+http://www.wikidata.org/entity/Q62449,flat white,cultural representative,0.589276161044836
+http://www.wikidata.org/entity/Q36192,folklore,cultural agnostic,0.9359646439552307
+http://www.wikidata.org/entity/Q1968,Formula One,cultural agnostic,0.6718754023313522
+http://www.wikidata.org/entity/Q3102,Francis Coventry,cultural representative,0.8565358966588974
+http://www.wikidata.org/entity/Q84629,Franz Ziehl,cultural exclusive,0.951535627245903
+http://www.wikidata.org/entity/Q6534,French Revolution,cultural representative,0.8781579583883286
+http://www.wikidata.org/entity/Q764,fungi,cultural agnostic,0.9513077139854431
+http://www.wikidata.org/entity/Q169325,Funimation,cultural representative,0.8221619352698326
+http://www.wikidata.org/entity/Q618710,gauze,cultural agnostic,0.9397249519824982
+http://www.wikidata.org/entity/Q3204,Geneva Open Challenger,cultural representative,0.7483849376440048
+http://www.wikidata.org/entity/Q764233,geoponici,cultural exclusive,0.8503478914499283
+http://www.wikidata.org/entity/Q3335,George Orwell,cultural representative,0.9252319633960724
+http://www.wikidata.org/entity/Q1255562,Glasgow School,cultural representative,0.6943718157708645
+http://www.wikidata.org/entity/Q172964,goalkeeper,cultural agnostic,0.936705470085144
+http://www.wikidata.org/entity/Q14924,golf ball retriever,cultural agnostic,0.9296430498361588
+http://www.wikidata.org/entity/Q627325,graphic designer,cultural agnostic,0.9452497214078903
+http://www.wikidata.org/entity/Q45594,greeting,cultural agnostic,0.9436820894479752
+http://www.wikidata.org/entity/Q6663,hamburger,cultural representative,0.9196635335683823
+http://www.wikidata.org/entity/Q655556,Heimatschutz Architecture,cultural exclusive,0.93243707716465
+http://www.wikidata.org/entity/Q23565,Hessischer Rundfunk,cultural exclusive,0.9559847861528397
+http://www.wikidata.org/entity/Q51677,High Priest of Israel,cultural exclusive,0.682444735430181
+http://www.wikidata.org/entity/Q578269,HM Treasury,cultural exclusive,0.9531746953725815
+http://www.wikidata.org/entity/Q65707,Horst P. Horst,cultural representative,0.65063900873065
+http://www.wikidata.org/entity/Q59243,Hyundai Motor Group,cultural representative,0.8780671507120132
+http://www.wikidata.org/entity/Q132137,icon,cultural representative,0.8132442906498909
+http://www.wikidata.org/entity/Q8538,Image Engine,cultural agnostic,0.9330841898918152
+http://www.wikidata.org/entity/Q22865,independent city of Germany,cultural exclusive,0.9531712979078293
+http://www.wikidata.org/entity/Q643996,Industrial Culture Handbook,cultural agnostic,0.7487017288804054
+http://www.wikidata.org/entity/Q58968,intellectual,cultural agnostic,0.9469742029905319
+http://www.wikidata.org/entity/Q3298,Intercontinental Champions' Supercup,cultural exclusive,0.405589000787586
+http://www.wikidata.org/entity/Q580340,Irish poetry,cultural representative,0.689446471631527
+http://www.wikidata.org/entity/Q400,Jenna Jameson,cultural representative,0.9267405271530151
+http://www.wikidata.org/entity/Q161439,jewelry,cultural agnostic,0.9441327601671219
+http://www.wikidata.org/entity/Q10940,jockstrap,cultural agnostic,0.7843804359436035
+http://www.wikidata.org/entity/Q224644,Joe Kubert,cultural representative,0.9012102633714676
+http://www.wikidata.org/entity/Q1294605,Jugendstil,cultural representative,0.910382941365242
+http://www.wikidata.org/entity/Q84405,Karl Landsteiner,cultural representative,0.5126493228599429
+http://www.wikidata.org/entity/Q43416,Keanu Reeves,cultural representative,0.9208087921142578
+http://www.wikidata.org/entity/Q80866,Khalifa,cultural representative,0.5755328387022018
+http://www.wikidata.org/entity/Q2890234,Kinpira,cultural exclusive,0.5226499121636152
+http://www.wikidata.org/entity/Q6418545,Kitty Foyle,cultural representative,0.9035933166742325
+http://www.wikidata.org/entity/Q693461,KREEP,cultural agnostic,0.7629580423235893
+http://www.wikidata.org/entity/Q489774,Kyobo Book Centre,cultural exclusive,0.9582403004169464
+http://www.wikidata.org/entity/Q12494,ladyfinger,cultural representative,0.5031373761594296
+http://www.wikidata.org/entity/Q284465,lectionary,cultural agnostic,0.9316810965538025
+http://www.wikidata.org/entity/Q17563,Leonard Law,cultural exclusive,0.953447625041008
+http://www.wikidata.org/entity/Q3086695,Les Trois Accords,cultural representative,0.6604933366179466
+http://www.wikidata.org/entity/Q493858,"Lions' Commentary on UNIX 6th Edition, with Source Code",cultural exclusive,0.7910281270742416
+http://www.wikidata.org/entity/Q3257761,Loco Locass,cultural exclusive,0.5497154965996742
+http://www.wikidata.org/entity/Q1133078,logographer,cultural agnostic,0.9381731152534485
+http://www.wikidata.org/entity/Q84,London,cultural exclusive,0.8766392022371292
+http://www.wikidata.org/entity/Q182357,lyric poetry,cultural agnostic,0.9168559312820435
+http://www.wikidata.org/entity/Q48221,Malikism,cultural representative,0.8835620731115341
+http://www.wikidata.org/entity/Q8274,manga,cultural representative,0.8882430344820023
+http://www.wikidata.org/entity/Q131165,Manichaeism,cultural representative,0.7289656475186348
+http://www.wikidata.org/entity/Q8362,manuscript illumination,cultural agnostic,0.9230546206235886
+http://www.wikidata.org/entity/Q3281,Marit Paulsen,cultural exclusive,0.8661178797483444
+http://www.wikidata.org/entity/Q11417,martial art,cultural agnostic,0.8947922587394714
+http://www.wikidata.org/entity/Q98714302,master of the works,cultural agnostic,0.5707936771214008
+http://www.wikidata.org/entity/Q162875,mausoleum,cultural agnostic,0.9464915245771408
+http://www.wikidata.org/entity/Q257153,Mausoleum of Saladin,cultural exclusive,0.7254325971007347
+http://www.wikidata.org/entity/Q76574,maypole,cultural representative,0.6310425512492657
+http://www.wikidata.org/entity/Q2321,Mega-Łada Togliatti,cultural exclusive,0.9050079733133316
+http://www.wikidata.org/entity/Q203827,Melbourne shuffle,cultural exclusive,0.7762297242879868
+http://www.wikidata.org/entity/Q2185917,mennonites in Bolivia,cultural exclusive,0.8761545270681381
+http://www.wikidata.org/entity/Q873,Meryl Streep,cultural representative,0.9158288687467575
+http://www.wikidata.org/entity/Q3333382,mesocosm,cultural agnostic,0.9515476077795029
+http://www.wikidata.org/entity/Q344299,Metro Istanbul,cultural exclusive,0.9459609836339951
+http://www.wikidata.org/entity/Q5592,Michelangelo,cultural representative,0.9237955957651138
+http://www.wikidata.org/entity/Q6836765,Michele Jolin,cultural exclusive,0.8610178977251053
+http://www.wikidata.org/entity/Q220011,Mike DeCarlo,cultural representative,0.8407901078462601
+http://www.wikidata.org/entity/Q835,Mikhail Bulgakov,cultural representative,0.926022857427597
+http://www.wikidata.org/entity/Q1750272,milk bar,cultural agnostic,0.739460825920105
+http://www.wikidata.org/entity/Q674067,mime artist,cultural agnostic,0.8802633583545685
+http://www.wikidata.org/entity/Q1628649,Minhag,cultural exclusive,0.6466096676886082
+http://www.wikidata.org/entity/Q460039,Mixed team,cultural agnostic,0.9465126544237137
+http://www.wikidata.org/entity/Q687,Molière,cultural representative,0.9250583499670029
+http://www.wikidata.org/entity/Q429088,mons,cultural agnostic,0.9317416399717331
+http://www.wikidata.org/entity/Q23402,Musée d'Orsay,cultural representative,0.8680046498775482
+http://www.wikidata.org/entity/Q2743,musical,cultural agnostic,0.9348736554384232
+http://www.wikidata.org/entity/Q229724,Naoko Takeuchi,cultural representative,0.9244523048400879
+http://www.wikidata.org/entity/Q616753,Naryshkin Baroque,cultural representative,0.9222936034202576
+http://www.wikidata.org/entity/Q479102,National Festival of Polish Song in Opole,cultural exclusive,0.9559647738933563
+http://www.wikidata.org/entity/Q56000,naturalism,cultural agnostic,0.9247516542673111
+http://www.wikidata.org/entity/Q194285,Nebula Award,cultural representative,0.7939625754952431
+http://www.wikidata.org/entity/Q25648,New York Film Festival,cultural representative,0.7733803018927574
+http://www.wikidata.org/entity/Q264238,newsletter,cultural agnostic,0.9475972801446915
+http://www.wikidata.org/entity/Q265169,Nitro Records,cultural representative,0.6241348851472139
+http://www.wikidata.org/entity/Q518390,nod,cultural agnostic,0.9301517158746719
+http://www.wikidata.org/entity/Q1377546,nunsploitation,cultural exclusive,0.6883359588682652
+http://www.wikidata.org/entity/Q216929,Oliver & Company,cultural representative,0.8862689137458801
+http://www.wikidata.org/entity/Q2425502,onnagata,cultural representative,0.6346235498785973
+http://www.wikidata.org/entity/Q1344,opera,cultural agnostic,0.6577200219035149
+http://www.wikidata.org/entity/Q1772945,Opera dei Pupi,cultural exclusive,0.9169061332941055
+http://www.wikidata.org/entity/Q470137,original English-language manga,cultural representative,0.7953939065337181
+http://www.wikidata.org/entity/Q43091,orthography,cultural agnostic,0.9497708827257156
+http://www.wikidata.org/entity/Q27207,Osteichthyes,cultural agnostic,0.9456710070371628
+http://www.wikidata.org/entity/Q29536,paganism,cultural agnostic,0.9419125318527222
+http://www.wikidata.org/entity/Q182370,paint-on-glass animation,cultural agnostic,0.9420871436595917
+http://www.wikidata.org/entity/Q130898,Palace of Iturbide,cultural representative,0.5781362131237984
+http://www.wikidata.org/entity/Q7845,pataphysics,cultural agnostic,0.9503118544816971
+http://www.wikidata.org/entity/Q557,Patti Smith,cultural representative,0.9229228049516678
+http://www.wikidata.org/entity/Q272,Paul Morand,cultural representative,0.9258519411087036
+http://www.wikidata.org/entity/Q84809,Peter Schuster,cultural exclusive,0.9169629067182541
+http://www.wikidata.org/entity/Q23407,philosophy of mind,cultural agnostic,0.9400936961174011
+http://www.wikidata.org/entity/Q551835,physician writer,cultural agnostic,0.9440626353025436
+http://www.wikidata.org/entity/Q486748,pianist,cultural agnostic,0.9331856966018677
+http://www.wikidata.org/entity/Q7194764,pin and hanger assembly,cultural agnostic,0.9443331658840179
+http://www.wikidata.org/entity/Q2095595,Pinewood Toronto Studios,cultural exclusive,0.923503190279007
+http://www.wikidata.org/entity/Q12024,Pinus,cultural agnostic,0.944238543510437
+http://www.wikidata.org/entity/Q127552,Pixar,cultural representative,0.9203349351882935
+http://www.wikidata.org/entity/Q200751,pixilation,cultural agnostic,0.946881040930748
+http://www.wikidata.org/entity/Q756,plant,cultural agnostic,0.9511427283287048
+http://www.wikidata.org/entity/Q3307548,Po,cultural representative,0.8979236334562302
+http://www.wikidata.org/entity/Q19546,pope,cultural representative,0.8912019282579422
+http://www.wikidata.org/entity/Q27114292,posting style,cultural agnostic,0.9439564198255539
+http://www.wikidata.org/entity/Q30461,president,cultural agnostic,0.930590957403183
+http://www.wikidata.org/entity/Q38817,Prishtina International Film Festival,cultural exclusive,0.5169720649719238
+http://www.wikidata.org/entity/Q10892,protist,cultural agnostic,0.9522950500249863
+http://www.wikidata.org/entity/Q12516,pyramid,cultural agnostic,0.9480701833963394
+http://www.wikidata.org/entity/Q434,Pyrus,cultural agnostic,0.9486347883939743
+http://www.wikidata.org/entity/Q41800,Raquel Argandoña,cultural exclusive,0.8539353460073471
+http://www.wikidata.org/entity/Q4692,Renaissance,cultural representative,0.6850601211190224
+http://www.wikidata.org/entity/Q11707,restaurant,cultural agnostic,0.9456461519002914
+http://www.wikidata.org/entity/Q66854,Rietheim,cultural exclusive,0.9602113664150238
+http://www.wikidata.org/entity/Q383845,rigaudon,cultural exclusive,0.6763679683208466
+http://www.wikidata.org/entity/Q66768,Rossens,cultural exclusive,0.9597113728523254
+http://www.wikidata.org/entity/Q18702,Royal free city,cultural exclusive,0.9580654799938202
+http://www.wikidata.org/entity/Q54829,RTVE,cultural representative,0.6780689023435116
+http://www.wikidata.org/entity/Q172582,Sahitya Akademi Award,cultural exclusive,0.955267146229744
+http://www.wikidata.org/entity/Q1509703,Saintonge,cultural exclusive,0.9557757824659348
+http://www.wikidata.org/entity/Q11122366,sandalwood,cultural agnostic,0.7949343621730804
+http://www.wikidata.org/entity/Q25814,seed plant,cultural agnostic,0.9512066841125488
+http://www.wikidata.org/entity/Q237338,seinen,cultural representative,0.8938304781913757
+http://www.wikidata.org/entity/Q145234,Seiun Awards,cultural representative,0.532057411968708
+http://www.wikidata.org/entity/Q15761,servus,cultural agnostic,0.5332081159576774
+http://www.wikidata.org/entity/Q1503157,Shakespeare and Company,cultural representative,0.5096960477530956
+http://www.wikidata.org/entity/Q7372,shark,cultural agnostic,0.9480513483285904
+http://www.wikidata.org/entity/Q211367,sheet metal,cultural agnostic,0.9475086778402328
+http://www.wikidata.org/entity/Q2278256,Shepperton Studios,cultural agnostic,0.5102041512727737
+http://www.wikidata.org/entity/Q231302,shōnen,cultural representative,0.9075643569231033
+http://www.wikidata.org/entity/Q23589,Showtime,cultural representative,0.8879431486129761
+http://www.wikidata.org/entity/Q340709,shrug,cultural agnostic,0.9195991009473801
+http://www.wikidata.org/entity/Q737377,Singer House,cultural exclusive,0.9601706564426422
+http://www.wikidata.org/entity/Q139932,single whip law,cultural exclusive,0.8243317231535912
+http://www.wikidata.org/entity/Q124619225,Siuuu,cultural exclusive,0.813564658164978
+http://www.wikidata.org/entity/Q15783,skateboard,cultural agnostic,0.9335903078317642
+http://www.wikidata.org/entity/Q1661080,small press,cultural agnostic,0.9428016692399979
+http://www.wikidata.org/entity/Q17084639,socks and sandals,cultural agnostic,0.9241916388273239
+http://www.wikidata.org/entity/Q7554349,software publisher,cultural agnostic,0.9517931342124939
+http://www.wikidata.org/entity/Q178406,solo dance,cultural agnostic,0.923104777932167
+http://www.wikidata.org/entity/Q359293,Soo Line Railroad,cultural exclusive,0.9331151098012924
+http://www.wikidata.org/entity/Q884,South Korea,cultural exclusive,0.44314073771238327
+http://www.wikidata.org/entity/Q236913,space rock,cultural agnostic,0.7131122462451458
+http://www.wikidata.org/entity/Q27185,Stone Bell House,cultural exclusive,0.9527897238731384
+http://www.wikidata.org/entity/Q6539,Storming of the Bastille,cultural representative,0.8732706606388092
+http://www.wikidata.org/entity/Q182361,Studio 4°C,cultural representative,0.7370669171214104
+http://www.wikidata.org/entity/Q465501,stunt performer,cultural agnostic,0.9507960379123688
+http://www.wikidata.org/entity/Q1140845,subterranean river,cultural agnostic,0.9510538130998611
+http://www.wikidata.org/entity/Q9603,Sufism,cultural representative,0.879981279373169
+http://www.wikidata.org/entity/Q1365,Swept Away,cultural representative,0.7783680707216263
+http://www.wikidata.org/entity/Q11254,table salt,cultural agnostic,0.9433148801326752
+http://www.wikidata.org/entity/Q2465121,Tajikfilm,cultural exclusive,0.705475278198719
+http://www.wikidata.org/entity/Q7679703,Talk to Me,cultural agnostic,0.7794048264622688
+http://www.wikidata.org/entity/Q1568338,technical writer,cultural agnostic,0.9470218569040298
+http://www.wikidata.org/entity/Q7696211,Telegram style,cultural agnostic,0.9136595577001572
+http://www.wikidata.org/entity/Q674413,tell,cultural agnostic,0.7538205310702324
+http://www.wikidata.org/entity/Q175122,terrestrial television,cultural agnostic,0.9518571346998215
+http://www.wikidata.org/entity/Q595,The Intouchables,cultural representative,0.8529044836759567
+http://www.wikidata.org/entity/Q270844,The World,cultural agnostic,0.9049046337604523
+http://www.wikidata.org/entity/Q1074069,tidal river,cultural agnostic,0.954036071896553
+http://www.wikidata.org/entity/Q187120,time shifting,cultural agnostic,0.9465186446905136
+http://www.wikidata.org/entity/Q3267562,Tina Nordström,cultural exclusive,0.5892196707427502
+http://www.wikidata.org/entity/Q685935,trade magazine,cultural agnostic,0.9524663835763931
+http://www.wikidata.org/entity/Q184781,traditional animation,cultural agnostic,0.9409230202436447
+http://www.wikidata.org/entity/Q235858,traditional folk music,cultural agnostic,0.8450121879577637
+http://www.wikidata.org/entity/Q870,train,cultural agnostic,0.950995072722435
+http://www.wikidata.org/entity/Q28543,transport in Hungary,cultural exclusive,0.9565203189849854
+http://www.wikidata.org/entity/Q479716,university press,cultural agnostic,0.9323145598173141
+http://www.wikidata.org/entity/Q13178,Vaccinium sect. Cyanococcus,cultural agnostic,0.9461670070886612
+http://www.wikidata.org/entity/Q194363,Vaslav Nijinsky,cultural representative,0.9241488128900528
+http://www.wikidata.org/entity/Q49024,Venice Film Festival,cultural representative,0.9102328270673752
+http://www.wikidata.org/entity/Q8072,volcano,cultural agnostic,0.94998599588871
+http://www.wikidata.org/entity/Q246,Volkswagen,cultural representative,0.9036065936088562
+http://www.wikidata.org/entity/Q177764,Voodoo Church,cultural exclusive,0.5484907766804099
+http://www.wikidata.org/entity/Q375,waffle,cultural agnostic,0.7389129251241684
+http://www.wikidata.org/entity/Q59183,Wanderer,cultural representative,0.4998033493757248
+http://www.wikidata.org/entity/Q911871,wilderness,cultural agnostic,0.9506794065237045
+http://www.wikidata.org/entity/Q1552567,wolf pit,cultural agnostic,0.9398806542158127
+http://www.wikidata.org/entity/Q36180,writer,cultural agnostic,0.9504910707473755
+http://www.wikidata.org/entity/Q156316,Würzburg Residence,cultural exclusive,0.9586295634508133
+http://www.wikidata.org/entity/Q56911,xunfu,cultural exclusive,0.9270234256982803
+http://www.wikidata.org/entity/Q377,Yanka Kupala,cultural exclusive,0.8488318100571632
+http://www.wikidata.org/entity/Q615394,Yếm,cultural representative,0.7565494775772095

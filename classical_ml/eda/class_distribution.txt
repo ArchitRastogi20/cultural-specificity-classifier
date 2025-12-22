@@ -1,0 +1,14 @@
+CLASS DISTRIBUTION SUMMARY
+========================================
+
+TRAIN SET
+Total samples: 6251
+cultural agnostic: 1872 samples (29.95%)
+cultural exclusive: 2691 samples (43.05%)
+cultural representative: 1688 samples (27.0%)
+
+VALID SET
+Total samples: 300
+cultural agnostic: 117 samples (39.0%)
+cultural exclusive: 76 samples (25.33%)
+cultural representative: 107 samples (35.67%)

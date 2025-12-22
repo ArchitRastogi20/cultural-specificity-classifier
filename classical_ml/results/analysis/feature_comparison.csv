@@ -1,0 +1,6 @@
+Metric,Basic Features Only,With Wikipedia Features,Improvement
+Accuracy,0.5267,0.6900,0.1633
+F1 (Macro),0.5063,0.6548,0.1485
+F1 (Weighted),0.5221,0.6587,0.1366
+Precision (Macro),0.5120,0.7048,0.1929
+Recall (Macro),0.5054,0.6869,0.1815
