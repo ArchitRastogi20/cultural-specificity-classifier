@@ -1,81 +1,57 @@
-# Cultural Specificity Classifier (Classical ML)
-
-A non–language-model-based system for classifying items by their degree of cultural specificity using engineered features and classical machine learning.
+Here is a **brief, formal outermost `README.md`** that clearly distinguishes the two approaches and points to the correct folders.
 
 ---
 
-## Problem Statement
+# Cultural Specificity Classifier
 
-Items vary in how culturally specific they are. Some are universally known, while others are strongly tied to a particular culture.
-The task is to classify items into three categories:
+This repository contains two complementary approaches for classifying items based on their degree of cultural specificity. The task involves assigning each item to one of three classes: Cultural Agnostic, Cultural Representative, or Cultural Exclusive.
 
-| Category                    | Description                                                 |
-| --------------------------- | ----------------------------------------------------------- |
-| **Cultural Agnostic**       | Universally known items with no strong cultural association |
-| **Cultural Representative** | Items originating from a culture but globally recognized    |
-| **Cultural Exclusive**      | Items known primarily within a specific culture             |
-
-This is a multi-class classification problem with subjective class boundaries and class imbalance.
-
----
-
-## Approach
-
-This approach does **not** use pretrained language models. Instead, it relies on:
-
-* **Engineered textual features** (TF-IDF, metadata)
-* **Structured knowledge** from Wikipedia and Wikidata
-* **Classical machine learning models**, primarily gradient-boosted decision trees
-
-The key insight is that **cultural specificity correlates strongly with structured encyclopedic signals**, such as language coverage, geographic properties, and cultural metadata.
-
----
-
-## Model
-
-* **Algorithm**: XGBoost (Gradient Boosted Decision Trees)
-* **Features**:
-
-  * Wikipedia language counts and page statistics
-  * Wikidata cultural and geographic properties
-  * Engineered ratios and interaction features
-* **Training**: Stratified train/validation split with hyperparameter tuning (Optuna)
-
----
-
-## Results
-
-**Test Set Performance (300 samples)**
-
-| Metric      | Score  |
-| ----------- | ------ |
-| Accuracy    | 72.67% |
-| Macro F1    | 0.7066 |
-| Weighted F1 | 0.7118 |
-
-**Key Observation**
-Adding Wikipedia/Wikidata features improves Macro F1 by approximately **40%** compared to a text-only baseline.
+The two approaches differ in methodology, modeling assumptions, and feature representations.
 
 ---
 
 ## Repository Structure
 
 ```
-classical_ml/
-├── extract_features.py        # Wikipedia/Wikidata feature extraction
-├── train_classifier.py        # Model training
-├── tune_hyperparameters.py   # Hyperparameter optimization
-├── test_classifier.py         # Evaluation and comparison
-├── models/                    # Trained models
-└── results/                   # Predictions and metrics
+.
+├── classical_ml/
+├── transformer_based/
+└── README.md
 ```
+
+---
+
+## Approaches
+
+### Classical Machine Learning (Non-LM)
+
+The `classical_ml/` directory contains a **non–language-model-based** solution built using classical machine learning techniques. This approach relies on engineered features derived from textual attributes and external structured knowledge (e.g., Wikipedia and Wikidata metadata), combined with traditional classifiers such as gradient-boosted decision trees.
+
+This approach emphasizes interpretability, computational efficiency, and explicit feature engineering.
+
+Refer to `classical_ml/README.md` for detailed methodology, experiments, and results.
+
+---
+
+### Transformer-Based Models (LM)
+
+The `transformer_based/` directory contains a **language-model-based** solution leveraging pretrained transformer architectures. This approach fine-tunes multilingual transformer models on the cultural specificity classification task, using learned contextual representations instead of manually engineered features.
+
+This approach focuses on representation learning and end-to-end neural modeling.
+
+Refer to `transformer_based/README.md` for detailed methodology, training setup, and evaluation results.
 
 ---
 
 ## Notes
 
-* This approach emphasizes **interpretability**, **efficiency**, and **explicit feature engineering**.
-* It serves as a strong non-LM baseline for comparison with transformer-based models.
+* Both approaches are self-contained and independently reproducible.
+* The repository is structured to allow direct comparison between classical (non-LM) and transformer-based (LM) methodologies for the same task and dataset.
 
 ---
 
+## License
+
+This project is released under the Apache 2.0 License.
+
+---
